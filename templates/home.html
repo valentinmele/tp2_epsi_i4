@@ -1,0 +1,11 @@
+<!doctype html>
+<html>
+   <body>
+        <p>Température : {{ data['temp'][0] }} - {{ data['temp'][1] }}</p>
+        <p>Humidité : {{ data['hum'][0] }} - {{ data['hum'][1] }}</p>
+
+        <form action="{{ url_for('calcul') }}" method="post">
+            <input type="submit">
+        </form>
+   </body>
+</html>
